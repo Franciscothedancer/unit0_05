@@ -1,0 +1,16 @@
+# Created by:Francisco Lee
+# Created on:Sep 2017
+# Created for: ICS3U
+# This program calculates area and perimeter.
+
+
+
+import ui
+
+def answer_touch_up_inside(sender):
+    # displays the answer for area and perimeter
+    view['area_answer_label'].text = 'Area = ' + str(3*5) + ' cm^2'
+    view['perimeter_answer_label'].text = 'Perimeter = ' + str(2*(5+3)) + ' cm'
+
+view = ui.load_view()
+view.present('full_screen')
